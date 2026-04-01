@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Mental Distress Detection</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 70px;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h3 {
+            color: #2c3e50;
+        }
+        ul {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="/">Mental Distress Detection</a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="/mainhome">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- About Content -->
+<div class="container mt-5">
+    <h1 class="text-center">About the Project</h1>
+    <p>This web application is designed to detect mental distress, such as stress or depression, using machine learning models. The detection is based on either user-generated social media content (tweets) or responses to standardized depression assessment questions.</p>
+
+    <h3>Detection Methods</h3>
+    <ul>
+        <li><strong>Tweet-based Detection:</strong> Uses Natural Language Processing (NLP) on user tweets to detect stress/depression.</li>
+        <li><strong>Depression Questionnaire-based Detection:</strong> Evaluates responses to 10 clinically relevant questions using ML models.</li>
+    </ul>
+
+    <h3>Technologies Used</h3>
+    <ul>
+        <li>Python, Flask for Web Development</li>
+        <li>Scikit-learn for Machine Learning</li>
+        <li>TF-IDF for Feature Extraction</li>
+        <li>Joblib for Model Serialization</li>
+        <li>SQLite for User and Prediction Data Storage</li>
+    </ul>
+
+    <h3>Model Accuracies</h3>
+    <h5>On Depression Questionnaire Dataset:</h5>
+    <ul>
+        <li><strong>Random Forest:</strong> 97%</li>
+        <li><strong>Support Vector Machine (SVM):</strong> 96%</li>
+        <li><strong>Multilayer Perceptron (MLP):</strong> 95%</li>
+        <li><strong>Naive Bayes:</strong> 93%</li>
+        <li><strong>Logistic Regression:</strong> 95%</li>
+        <li><strong>Gradient Boosting:</strong> 96%</li>
+        <li><strong>Decision Tree:</strong> 95%</li>
+    </ul>
+
+    <h5>On Tweet Dataset:</h5>
+    <ul>
+        <li><strong>Random Forest:</strong> 97%</li>
+        <li><strong>Support Vector Machine (SVM):</strong> 96%</li>
+        <li><strong>Multilayer Perceptron (MLP):</strong> 95%</li>
+        <li><strong>Naive Bayes:</strong> 90%</li>
+        <li><strong>Logistic Regression:</strong> 95%</li>
+        <li><strong>Gradient Boosting:</strong> 96%</li>
+        <li><strong>Decision Tree:</strong> 94%</li>
+    </ul>
+
+    <p>Users can register, log in, and test the system with their tweet or questionnaire input. An admin panel stores all results securely for future analysis.</p>
+</div>
+
+</body>
+</html>
